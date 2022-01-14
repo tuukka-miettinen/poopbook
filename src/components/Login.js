@@ -1,6 +1,5 @@
 import { authentication } from '../Firebase';
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-require('dotenv').config({ debug: process.env.DEBUG })
 
 const Login = () => {
   const signInWithGoogle = () => {
