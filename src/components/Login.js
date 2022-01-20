@@ -12,6 +12,7 @@ const Login = () => {
         // The signed-in user info.
         const user = result.user;
         // redux action? --F> dispatch({ type: SET_USER, user });
+        window.location.href="/"
       })
       .catch((error) => {
         // Handle Errors here.

@@ -1,9 +1,11 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from "firebase/auth";
-require('dotenv').config({ debug: process.env })
+import { getFirestore } from "firebase/firestore";
+import env from "react-dotenv";
 
+console.log(env.FIREBASE_API_KEY)
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: env.FIREBASE_API_KEY,
   authDomain: "poopbook-f9ee1.firebaseapp.com",
   projectId: "poopbook-f9ee1",
   storageBucket: "poopbook-f9ee1.appspot.com",
@@ -13,5 +15,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const db = getFirestore();
 
 export const authentication = getAuth(app);
