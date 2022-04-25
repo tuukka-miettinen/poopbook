@@ -1,6 +1,5 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
 import env from "react-dotenv";
 
 console.log(env.FIREBASE_API_KEY)
@@ -15,6 +14,5 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore();
 
 export const authentication = getAuth(app);
