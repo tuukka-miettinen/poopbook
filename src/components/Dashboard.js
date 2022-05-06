@@ -20,7 +20,6 @@ const Dashboard = () => {
                     // justifyContent="center"
                     style={{ minHeight: '100vh', paddingTop: 15 }}
                 >
-                    <Link to="/Logout">Sign out</Link>
                     <h1>Dashboard</h1>
                     <PoopForm />
                     <PoopList />

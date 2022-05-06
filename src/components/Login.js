@@ -28,7 +28,7 @@ const Login = () => {
   return (
     <div className="App">
       <button onClick={signInWithGoogle}>
-        Click me
+        Log in with google
       </button>
     </div>
   );
