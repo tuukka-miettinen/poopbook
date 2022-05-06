@@ -15,7 +15,8 @@ import { UserContext } from '../App';
 import { signOut } from "firebase/auth";
 import { authentication } from '../Firebase';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+// const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Home'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -52,9 +53,10 @@ const ResponsiveAppBar = () => {
                         variant="h6"
                         noWrap
                         component="div"
+                        style={{ userSelect: "none", cursor: "pointer" }}
                         sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
                     >
-                        LOGO
+                        💩📖
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
