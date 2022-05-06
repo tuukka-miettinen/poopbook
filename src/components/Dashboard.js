@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useContext } from 'react';
 import Box from '@mui/material/Box';
 import { Link } from "react-router-dom"
 import PoopForm from "./PoopForm"
