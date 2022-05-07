@@ -17,8 +17,7 @@ const Dashboard = () => {
                     spacing={0}
                     direction="column"
                     alignItems="center"
-                    // justifyContent="center"
-                    style={{ minHeight: '100vh', paddingTop: 15 }}
+                    style={{ minHeight: 'calc(100vh - 69px)' }}
                 >
                     <h1>Dashboard</h1>
                     <PoopForm />

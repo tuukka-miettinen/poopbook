@@ -9,7 +9,10 @@ export default function PoopForm() {
         }
     });
 
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data);
+        
+    } 
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>

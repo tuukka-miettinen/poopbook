@@ -17,7 +17,8 @@ import { authentication } from '../Firebase';
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 const pages = ['Home'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Account', 'Logout'];
 
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
